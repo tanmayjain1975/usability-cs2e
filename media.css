@@ -1,1 +1,17 @@
 /* new branch */
+.container{
+    overflow: hidden;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+@media(max-width: 900px){
+    .nav-toggle{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
