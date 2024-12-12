@@ -7,11 +7,45 @@
     display: none;
 }
 
+.example-card{
+    height: 300px;
+}
+
 @media(max-width: 900px){
     .nav-toggle{
         display: block;
     }
     .nav-links{
         display: none;
+    }
+    .example-area{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .example-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+}
+
+@media(max-width: 767px){
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-right img{
+        width: 100%;
+    }
+    .header-left{
+        width: 100%;
+        text-align: center;
+    }
+    .primary-button{
+        width: 100%;
+    }
+    .big-feature-container{
+        flex-direction: column;
+    }
+    .right{
+        flex-direction: column-reverse;
     }
 }
